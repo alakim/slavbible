@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Irmologion UCS;
+  src: url("fonts/IrmIEUcs.ttf") format("truetype");
+}
+@font-face {
+  font-family: Oglavie UCS;
+  src: url("fonts/OglIeUcs8.ttf") format("truetype");
+}
+
+body {
+	margin: 50px;
+	font-family: Irmologion UCS, Lucida Grande, sans-serif;
+	font-weight: normal;
+	font-size: 22pt;
+}
+h1{
+	font-family: Oglavie UCS, Irmologion UCS, Lucida Grande, sans-serif;
+	font-weight: normal;
+	font-size: 42pt;
+	text-align:center;
+}
+
+h1,h2,.red{
+	color:#EF0000;
+}
+
+p{
+	margin:0px;
+	padding:0px;
+}
+
+.selected{
+	background-color:#FFE8BF;
+	padding-left:5px;
+}
+
+.toc{
+	font-size:16px;
+	text-align:center;
+}
+.toc a{text-decoration:none}
+.toc a:link{color:#EF0000;}
+.toc a:visited{color:#EF0000;}
+.toc a:hover{color:#EF0000; background-color:#FFE8BF}
+
+.nextRef{
+	font-family: Verdana, Arial, Sans-serif;
+	font-size:12px;
+	text-align: right;
+}
