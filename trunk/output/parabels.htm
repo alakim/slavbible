@@ -7,6 +7,26 @@
 			font-family: Verdana, Arial, Sans-serif;
 		}
 	</style>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		var re = /([ј-я][а-€])\.(\d+):(\d+)(-(\d+))?/i;
+		var books = {ћф:"mt", ћк:"mk", Ћк:"lk", »н:"jn"};
+		$(function(){
+			$.each($("a"), function(i, a){
+				var mt = $(a).text().match(re);
+				if(mt){
+					$(a).attr({
+						href: [
+								books[mt[1]], ".htm#",
+								mt[2], ":", mt[3],
+								mt[4]?("-"+mt[5]):""
+							].join(""),
+						target:"_blank"
+					});
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<h1>≈вангельские притчи</h1>
@@ -20,7 +40,7 @@
 		<tr>
 			<td class="act">о се€теле</td>
 			<td>
-				<a href="mt.htm#13:1">ћф.13:1-23</a>
+				<a href="mt.htm#13:1-23">ћф.13:1-23</a>
 			</td>
 			<td>
 				<a href="mk.htm#4:1">ћк.4:1-20</a>
