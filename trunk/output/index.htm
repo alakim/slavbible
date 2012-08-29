@@ -22,10 +22,20 @@
 			color:#00f;
 			cursor:hand; cursor:pointer;
 		}
+		.draft{
+			display:none;
+		}
 	</style>
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/html.js"></script>
 	<script type="text/javascript" src="js/maps.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			if(document.location.hash=="#draft"){
+				$(".draft").show();
+			}
+		});
+	</script>
 </head>
 <body>
 	<h1>Книги Нового Завета на церковнославянском языке</h1>
@@ -65,6 +75,7 @@
 	
 	<p>Об <a href="apostles.htm">апостолах евангелистах</a>.</p>
 	<p><a href="parabels.htm">Евангельские притчи</a></p>
+	<p class="draft"><a href="quotations.htm">Избранные цитаты</a></p>
 	
 	<div class="attention">
 		Для просмотра следует использовать браузеры Mozilla Firefox, Google Chorme, Safari.<br/>
