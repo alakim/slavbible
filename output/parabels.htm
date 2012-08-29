@@ -8,25 +8,14 @@
 		}
 	</style>
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/html.js"></script>
+	<script type="text/javascript" src="js/biblelink.js"></script>
 	<script type="text/javascript">
-		var re = /([ј-я][а-€])\.(\d+):(\d+)(-(\d+))?/i;
-		var books = {ћф:"mt", ћк:"mk", Ћк:"lk", »н:"jn"};
 		$(function(){
-			$.each($("a"), function(i, a){
-				var mt = $(a).text().match(re);
-				if(mt){
-					$(a).attr({
-						href: [
-								books[mt[1]], ".htm#",
-								mt[2], ":", mt[3],
-								mt[4]?("-"+mt[5]):""
-							].join(""),
-						target:"_blank"
-					});
-				}
-			});
+			$("td").bibleLinks("_blank");
 		});
 	</script>
+
 </head>
 <body>
 	<h1>≈вангельские притчи</h1>
@@ -39,134 +28,86 @@
 	</tr>
 		<tr>
 			<td class="act">о се€теле</td>
-			<td>
-				<a href="mt.htm#13:1-23">ћф.13:1-23</a>
-			</td>
-			<td>
-				<a href="mk.htm#4:1">ћк.4:1-20</a>
-			</td>
-			<td>
-				<a href="lk.htm#8:4">Ћк.8:4-15</a>
-			</td>
+			<td>ћф.13:1-23</td>
+			<td>ћк.4:1-20</td>
+			<td>Ћк.8:4-15</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о плевелах</td>
-			<td>
-				<a href="mt.htm#13:1">ћф.13:1-23</a>
-			</td>
-			<td>
-				<a href="mk.htm#4:1">ћк.4:1-20</a>
-			</td>
-			<td>
-				<a href="lk.htm#8:4">Ћк.8:4-15</a>
-			</td>
+			<td>ћф.13:1-23</td>
+			<td>ћк.4:1-20</td>
+			<td>Ћк.8:4-15</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о невидимо растущем семени</td>
 			<td>-</td>
-			<td>
-				<a href="mk.htm#4:26">ћк.4:26-29</a>
-			</td>
+			<td>ћк.4:26-29</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о зерне горчичном</td>
-			<td>
-				<a href="mt.htm#13:31">ћф.13:31-32</a>
-			</td>
-			<td>
-				<a href="mk.htm#4:30">ћк.4:30-32</a>
-			</td>
-			<td>
-				<a href="lk.htm#13:18">Ћк.13:18-19</a>
-			</td>
+			<td>ћф.13:31-32</td>
+			<td>ћк.4:30-32</td>
+			<td>Ћк.13:18-19</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о закваске</td>
-			<td>
-				<a href="mt.htm#13:33">ћф.13:33-35</a>
-			</td>
-			<td>
-				<a href="mk.htm#4:33">ћк.4:33-34</a>
-			</td>
-			<td>
-				<a href="lk.htm#13:20">Ћк.13:20-21</a>
-			</td>
+			<td>ћф.13:33-35</td>
+			<td>ћк.4:33-34</td>
+			<td>Ћк.13:20-21</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о сокровище, скрытом в поле</td>
-			<td>
-				<a href="mt.htm#13:44">ћф.13:44</a>
-			</td>
+			<td>ћф.13:44</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о драгоценной жемчужине</td>
-			<td>
-				<a href="mt.htm#13:45">ћф.13:45-46</a>
-			</td>
+			<td>ћф.13:45-46</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о неводе, закинутом в море</td>
-			<td>
-				<a href="mt.htm#13:47">ћф.13:47-50</a>
-			</td>
+			<td>ћф.13:47-50</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о хоз€ине, хран€щем новое и старое</td>
-			<td>
-				<a href="mt.htm#13:51">ћф.13:51-52</a>
-			</td>
+			<td>ћф.13:51-52</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о борьбе с соблазнами</td>
-			<td>
-				<a href="mt.htm#18:6">ћф.18:6-10</a>
-			</td>
-			<td>
-				<a href="mk.htm#9:42">ћк.9:42-50</a>
-			</td>
-			<td>
-				<a href="lk.htm#17:1">Ћк.17:1-2</a>
-			</td>
+			<td>ћф.18:6-10</td>
+			<td>ћк.9:42-50</td>
+			<td>Ћк.17:1-2</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о заблудшей овце</td>
-			<td>
-				<a href="mt.htm#18:10">ћф.18:10-20</a>
-			</td>
+			<td>ћф.18:10-20</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#15:3">Ћк.15:3-7</a>
-			</td>
+			<td>Ћк.15:3-7</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о немилосердном должнике</td>
-			<td>
-				<a href="mt.htm#18:21">ћф.18:21-35</a>
-			</td>
+			<td>ћф.18:21-35</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#17:3">Ћк.17:3-4</a>
-			</td>
+			<td>Ћк.17:3-4</td>
 			<td>-</td>
 		</tr>
 		<tr>
@@ -174,196 +115,144 @@
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="jn.htm#10:1">»н.10:1-21</a>
-			</td>
+			<td>»н.10:1-21</td>
 		</tr>
 		<tr>
 			<td class="act">о милосердном самар€нине</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#10:25">Ћк.10:25-37</a>
-			</td>
+			<td>Ћк.10:25-37</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о неотступной просьбе</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#11:5">Ћк.11:5-8</a>
-			</td>
+			<td>Ћк.11:5-8</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о безрассудном богаче</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#12:13">Ћк.12:13-21</a>
-			</td>
+			<td>Ћк.12:13-21</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о рабах, ожидающих возвращени€ своего господина</td>
-			<td>
-				<a href="mt.htm#24:42">ћф.24:42-51</a>
-			</td>
+			<td>ћф.24:42-51</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#12:35">Ћк.12:35-48</a>
-			</td>
+			<td>Ћк.12:35-48</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о благоразумном домоправителе</td>
-			<td>
-				<a href="mt.htm#24:45">ћф.24:45-51</a>
-			</td>
+			<td>ћф.24:45-51</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#12:42">Ћк.12:42-48</a>
-			</td>
+			<td>Ћк.12:42-48</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о бесплодной смоковнице</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#13:6">Ћк.13:6-9</a>
-			</td>
+			<td>Ћк.13:6-9</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о люб€щих первенствовать</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#14:7">Ћк.14:7-15</a>
-			</td>
+			<td>Ћк.14:7-15</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о званных на вечерю</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#14:16">Ћк.14:16-24</a>
-			</td>
+			<td>Ћк.14:16-24</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о блудном сыне</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#15:11">Ћк.15:11-32</a>
-			</td>
+			<td>Ћк.15:11-32</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о неверном домоправителе</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#16:1">Ћк.16:1-17</a>
-			</td>
+			<td>Ћк.16:1-17</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о богатом и Ћазаре</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#16:19">Ћк.16:19-31</a>
-			</td>
+			<td>Ћк.16:19-31</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о судье неправедном</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#18:1">Ћк.18:1-8</a>
-			</td>
+			<td>Ћк.18:1-8</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о мытаре и фарисее</td>
 			<td>-</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#18:9">Ћк.18:9-14</a>
-			</td>
+			<td>Ћк.18:9-14</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о работниках, получивших ровную плату</td>
-			<td>
-				<a href="mt.htm#20:1">ћф.20:1-16</a>
-			</td>
+			<td>ћф.20:1-16</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о дес€ти талантах</td>
-			<td>
-				<a href="mt.htm#25:14">ћф.25:14-30</a>
-			</td>
+			<td>ћф.25:14-30</td>
 			<td>-</td>
-			<td>
-				<a href="lk.htm#19:11">Ћк.19:11-28</a>
-			</td>
+			<td>Ћк.19:11-28</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о двух сыновь€х</td>
-			<td>
-				<a href="mt.htm#21:28">ћф.21:28-32</a>
-			</td>
+			<td>ћф.21:28-32</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о злых виноградар€х</td>
-			<td>
-				<a href="mt.htm#21:33">ћф.21:33-46</a>
-			</td>
-			<td>
-				<a href="mk.htm#12:1">ћк.12:1-12</a>
-			</td>
-			<td>
-				<a href="lk.htm#20:9">Ћк.20:9-19</a>
-			</td>
+			<td>ћф.21:33-46</td>
+			<td>ћк.12:1-12</td>
+			<td>Ћк.20:9-19</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о званных на брачный пир</td>
-			<td>
-				<a href="mt.htm#22:1">ћф.22:1-14</a>
-			</td>
+			<td>ћф.22:1-14</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о дес€ти девах</td>
-			<td>
-				<a href="mt.htm#25:1">ћф.25:1-13</a>
-			</td>
+			<td>ћф.25:1-13</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
 		</tr>
 		<tr>
 			<td class="act">о —трашном —уде</td>
-			<td>
-				<a href="mt.htm#25:31">ћф.25:31-46</a>
-			</td>
+			<td>ћф.25:31-46</td>
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
