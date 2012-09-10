@@ -36,6 +36,7 @@ var Maps = (function($){
 			{file:"Babylon.jpg", title:"Вавилонская империя на вершине своего могущества"},
 			{file:"PalestinePhys.jpg", title:"Рельеф Палестины"},
 			{file:"Judea.png", title:"Иудея"},
+			{file:"AsiaMinor.jpg", title:"Малая Азия"},
 			{file:"Rome.jpg", title:"Римская империя во времена Нового Завета"}
 		]},
 	];
