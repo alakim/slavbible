@@ -1,6 +1,7 @@
 var Maps = (function($){
 	var maps = [
 		{section:"Ветхий Завет", maps:[
+			{file:"AbrahamsWay.gif", title:"Путь Авраама"},
 			{file:"12tribes.jpg", title:"Раздел земли между двенадцатью коленами"},
 			{file:"Assyria.jpg", title:"Пророки ассирийского периода"},
 			{file:"Canaan.jpg", title:"Израильтяне завоевывают Ханаан"},
