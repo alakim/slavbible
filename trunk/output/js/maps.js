@@ -35,6 +35,7 @@ var Maps = (function($){
 			{file:"phys.jpg", title:"Физическая карта Святой Земли"},
 			{file:"Bible.jpg", title:"Страны библейской эпохи"},
 			{file:"Babylon.jpg", title:"Вавилонская империя на вершине своего могущества"},
+			{file:"AssyriaMap.png", title:"Ассирийская Империя в период Ассиро-Вавилонских войн 627-609 годов до н.э."},
 			{file:"PalestinePhys.jpg", title:"Рельеф Палестины"},
 			{file:"Judea.png", title:"Иудея"},
 			{file:"AsiaMinor.jpg", title:"Малая Азия"},
