@@ -40,7 +40,8 @@ var Maps = (function($){
 			{file:"PalestinePhys.jpg", title:"Рельеф Палестины"},
 			{file:"Judea.png", title:"Иудея"},
 			{file:"AsiaMinor.jpg", title:"Малая Азия"},
-			{file:"Rome.jpg", title:"Римская империя во времена Нового Завета"}
+			{file:"Rome.jpg", title:"Римская империя во времена Нового Завета"},
+			{file:"Greek_Colonies_of_N_BlackSea.png", title:"Греческие колонии на Черном море"}
 		]},
 	];
 	
