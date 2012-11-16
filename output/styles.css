@@ -1,10 +1,19 @@
 @font-face {
-  font-family: Irmologion UCS;
-  src: url("fonts/IrmIEUcs.ttf") format("truetype");
+ font-family: Irmologion UCS;
+ src: url("fonts/IrmIEUcs.eot") /* EOT file for IE */
 }
 @font-face {
-  font-family: Oglavie UCS;
-  src: url("fonts/OglIeUcs8.ttf") format("truetype");
+	font-family: Irmologion UCS;
+	src: url("fonts/IrmIEUcs.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: Oglavie UCS;
+ src: url("fonts/OglIeUcs8.eot") /* EOT file for IE */
+}
+@font-face {
+	font-family: Oglavie UCS;
+	src: url("fonts/OglIeUcs8.ttf") format("truetype");
 }
 
 body {
