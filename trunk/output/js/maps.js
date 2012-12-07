@@ -25,6 +25,7 @@ var Maps = (function($){
 			{file:"Pavel_trip.jpg", title:"Путешествия апостола Павла"}
 		]},
 		{section:"Иерусалим", maps:[
+			{file:"Jerusalem.jpg", title:"Иерусалим (фрагмент карты, составленной о. Александром Тимофеевым)"},
 			{file:"JerusalemChrist.jpg", title:"Иерусалим в эпоху Христа"},
 			{file:"JerusalemDavid.jpg", title:"Иерусалим во времена Давида и Соломона"},
 			{file:"JerusalemHezekiah.jpg", title:"Иерусалим во времена Езекии"},
