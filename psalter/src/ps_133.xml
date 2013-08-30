@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<!DOCTYPE psalm SYSTEM "psalm.dtd">
+<?xml-stylesheet type="text/xsl" href="Page.xsl"?>
+<psalm nr="133">
+	<title>Пёснь степeней, <num>рlг</num>.</title>
+	<verse nr="1">
+		<slav>
+			<initial>С</initial>E, нн7э благослови1те гDа, вси2 раби2 гDни, стоsщіи въ хрaмэ гDни, во дв0рэхъ д0му бGа нaшегw.</slav>
+		<rus>Благословите ныне Господа, все рабы Господни, стоящие в доме Господнем, [во дворах дома Бога нашего,] во время ночи.</rus>
+	</verse>
+	<verse nr="2">
+		<slav>
+			<num>в7</num> Въ н0щехъ воздэжи1те рyки вaшz во с™†z и3 благослови1те гDа.</slav>
+		<rus>Воздвигните руки ваши к святилищу, и благословите Господа.</rus>
+	</verse>
+	<verse nr="3">
+		<slav>
+			<num>G</num> Блгcви1тъ тS гDь t сіHна, сотвори1вый нeбо и3 зeмлю. </slav>
+		<rus>Благословит тебя Господь с Сиона, сотворивший небо и землю. Аллилуия.</rus>
+	</verse>
+</psalm>

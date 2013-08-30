@@ -1,0 +1,13 @@
+<!ELEMENT psalm (title, verse*)>
+<!ATTLIST psalm
+	nr CDATA #REQUIRED
+>
+<!ELEMENT verse (#PCDATA | slav | rus)*>
+<!ATTLIST verse
+	nr CDATA #REQUIRED
+>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT initial (#PCDATA)>
+<!ELEMENT title (#PCDATA | num | rus)*>
+<!ELEMENT rus (#PCDATA)>
+<!ELEMENT slav (#PCDATA | num | initial)*>
