@@ -1,0 +1,63 @@
+@font-face {
+ font-family: Irmologion UCS;
+ src: url("fonts/IrmIEUcs.eot") /* EOT file for IE */
+}
+@font-face {
+  font-family: Irmologion UCS;
+  src: url("fonts/IrmIEUcs.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: Oglavie UCS;
+ src: url("fonts/OglIeUcs8.eot") /* EOT file for IE */
+}
+@font-face {
+  font-family: slavjanic ucs;
+  src: url("fonts/SlavIEUcs.ttf") format("truetype");
+}
+
+
+body{
+	font-family:irmologion ucs;
+	font-size: 32px;
+	background-color:#eeeebb;
+}
+
+h1{
+	color:red;
+	font-size:140%;
+	text-align:center;
+	font-family: Zlatoust UCS, irmologion ucs;
+}
+
+span.number{
+	color:red;
+	font-size:110%;
+}
+
+
+.init{
+	font-family: Indycton UCS, irmologion ucs;
+	font-size: 80px;
+	font-weight: normal;
+	color:red;
+	float:left;
+}
+
+td.slav{
+	font-family: Irmologion UCS;
+	font-size: 32px;
+}
+td.rus{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	background-color:#eeeeee;
+	display:none;
+}
+td.rusctrl{
+	background-color:#ccccaa;
+	cursor:hand;
+}
+
+
+

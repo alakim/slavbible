@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft Visual Studio 6.0">
+
+<link rel="stylesheet" href="styles.cs">
+
+<script language="javascript">
+function winonload(){
+	var pg=document.location.hash;
+	pg=pg.replace(/#/, "");
+	
+	var xmldoc = new ActiveXObject("MSXML2.DOMDocument.3.0");
+	xmldoc.async = false;	
+	xmldoc.load(pg);
+	
+	var xsltbl = new ActiveXObject("MSXML2.DOMDocument.3.0");
+	xsltbl.async = false;
+	xsltbl.load("page.xsl");
+	
+	out.innerHTML = xmldoc.transformNode(xsltbl);
+};
+
+</script>
+</head>
+<body language="javascript" onload="winonload();">
+
+<div id="out"></div>
+</body>
+</html>
